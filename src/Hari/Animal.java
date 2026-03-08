@@ -15,6 +15,9 @@ public class Animal {
 	public void sleep() {
 		System.out.println(name + " is Sleeping");
 	}
+	public void food() {
+		System.out.println(name + " is Hunting");
+	}
 
     public static class Cat extends Animal{
 	  public Cat(String name) {
@@ -32,6 +35,7 @@ public class Animal {
 		Cat mycat = new Cat("Whiskers");
 		mycat.eat();
 		mycat.sleep();
+		mycat.food();
 		mycat.meow();
 	}
 
